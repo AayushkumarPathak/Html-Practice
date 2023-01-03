@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background: transparent;
+    border: 2px solid red;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.099);
+}
+
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.brand h1 span {
+    color: red;
+}
+
+/* header */
+#header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    /* background-color: black; */
+    width: 100vw;
+}
+
+#header .header {
+    min-height: 8vh;
+}
+
+#header .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+#header .nav-list ul {
+    display: flex;
+}
+
+#header .nav-list ul a {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px;
+}
+
+#header .nav-list ul a:hover {
+    color: red;
+}
+
+#hero {
+    background-image: url('https://media.istockphoto.com/id/1368944328/photo/blue-sky-and-soft-cloud.jpg?b=1&s=170667a&w=0&k=20&c=jgvXuG4qndgemtbSc6aKBLuxCG2DuLlZZWw786b1hPw=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+    color: white;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+
+
+}
